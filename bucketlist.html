@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>The Based Department</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-info bg-info">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/img/1_63lGHmSncfaGQDhFRaK6JQ.png" alt="logo" width="50" height="50" class="mr-2">
+            <span class="text-white" style="font-family: 'Courier New', Courier, monospace; font-size: 24px;">
+                Based Department
+            </span>
+        </a>
+        <div class="ml-auto d-flex align-items-center">
+            <a href="music.html" class="mx-3" data-toggle="tooltip" title="Based Music Taste">
+                <img src="assets/img/music-solid-full.svg" alt="music" width="25" height="25">
+            </a>
+            <a href="places.html" class="mx-3" data-toggle="tooltip" title="Based Places to be">
+                <img src="assets/img/map-regular-full.svg" alt="map" width="25" height="25">
+            </a>
+            <a href="bucketlist.html" class="mx-3" data-toggle="tooltip" title="Based Bucket List">
+                <img src="assets/img/list-check-solid.svg" alt="list" width="25" height="25">
+            </a>
+        </div>
+
+    </div>
+</nav>
+    
+    <div class="container text-center my-5">
+    <h1 class="mb-4" style="font-family: 'Courier New', Courier, monospace;">
+        Based Bucket List!
+    </h1>
+    <p style="font-family: 'Courier New', Courier, monospace; font-size: 18px;">
+        Things to do deemed to be the most based by the Based Department.
+    </p>
+    </div>
+    <div class="container my-5">
+  <div id="bucketAccordion">
+
+    
+    <div class="card">
+      <div class="card-header bg-info">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-white" data-toggle="collapse" data-target="#longTerm">
+            Based Hobbies
+          </button>
+        </h5>
+      </div>
+
+      <div id="longTerm" class="collapse show" data-parent="#bucketAccordion">
+        <div class="card-body">
+          <ul>
+            <li>Workout</li>
+            <li>Read</li>
+            <li>Explore</li>
+            <li>Learn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Short-Term Goals -->
+    <div class="card">
+      <div class="card-header bg-info">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-white collapsed" data-toggle="collapse" data-target="#shortTerm">
+            Based Goals
+          </button>
+        </h5>
+      </div>
+
+      <div id="shortTerm" class="collapse" data-parent="#bucketAccordion">
+        <div class="card-body">
+          <ul>
+            <li>Create a new project</li>
+            <li>Learn new skills</li>
+            <li>Exercise consistently</li>
+            <li>Develop a healthy lifestyle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bucket List -->
+    <div class="card">
+      <div class="card-header bg-info">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-white collapsed" data-toggle="collapse" data-target="#bucketList">
+            Bucket List
+          </button>
+        </h5>
+      </div>
+
+      <div id="bucketList" class="collapse" data-parent="#bucketAccordion">
+        <div class="card-body">
+          <ul>
+            <li>Visit at least 10 different countries</li>
+            <li>Go to the highest point in the world</li>
+            <li>Establish a meaningful career</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
