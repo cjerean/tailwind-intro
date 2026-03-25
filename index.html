@@ -3,78 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>The Based Department</title>
-
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-info bg-info">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="assets/img/1_63lGHmSncfaGQDhFRaK6JQ.png" alt="logo" width="50" height="50" class="mr-2">
-            <span class="text-white" style="font-family: 'Courier New', Courier, monospace; font-size: 24px;">
-                Based Department
-            </span>
-        </a>
-        <div class="ml-auto d-flex align-items-center">
-            <a href="music.html" class="mx-3" data-toggle="tooltip" title="Based Music Taste">
-                <img src="assets/img/music-solid-full.svg" alt="music" width="25" height="25">
+<body class="bg-blue-50 font-sans">
+    <div class="bg-blue-900 p-4">
+        <div class="text-2xl text-white text-center flex items-center justify-center space-x-4">            
+            <a href="index.html" class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/1_63lGHmSncfaGQDhFRaK6JQ.png" alt="home" class="w-8 h-8 rounded-full object-cover">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">Home</div>
             </a>
-            <a href="places.html" class="mx-3" data-toggle="tooltip" title="Based Places to be">
-                <img src="assets/img/map-regular-full.svg" alt="map" width="25" height="25">
+            <a href="music.html" class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/music-solid-full.svg" alt="music" class="w-8 h-8 filter invert">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">Music</div>
             </a>
-            <a href="bucketlist.html" class="mx-3" data-toggle="tooltip" title="Based Bucket List">
-                <img src="assets/img/list-check-solid.svg" alt="list" width="25" height="25">
+            <a href="places.html" class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/map-regular-full.svg" alt="map" class="w-8 h-8 filter invert">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">Places</div>
+            </a>
+            <a href="bucketlist.html" class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/list-check-solid.svg" alt="list" class="w-8 h-8 filter invert">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">Bucket List</div>
             </a>
         </div>
-
     </div>
-</nav>
     
-    <div class="container text-center my-5">
-    <h1 class="mb-4" style="font-family: 'Courier New', Courier, monospace;">
-        Welcome to the Based Department!
-    </h1>
-    <p style="font-family: 'Courier New', Courier, monospace; font-size: 18px;">
-        What life has to offer, curated by the Based Department Curator.
-    </p>
+    <div class="grid grid-cols-1 gap-4 p-8 w-full max-w-2xl mx-auto">
+        <div class="bg-blue-200 p-6 text-center shadow-sm">
+            <h1 class="text-blue-900 font-bold text-3xl mb-2">Welcome to the Based Department!</h1>
+            <p class="text-blue-800">What life has to offer, curated by the Based Department Curator.</p>
+        </div>
+
+        <div class="bg-blue-200 p-6 text-center hover:bg-blue-300 transition-colors shadow-sm">
+            <a href="music.html" class="block">
+                <span class="text-blue-900 font-bold text-xl block mb-2">Based Music Taste</span>
+                <span class="text-blue-800 text-sm">Music that will change your life and transcend your view of the world.</span>
+            </a>
+        </div>
+
+        <div class="bg-blue-200 p-6 text-center hover:bg-blue-300 transition-colors shadow-sm">
+            <a href="places.html" class="block">
+                <span class="text-blue-900 font-bold text-xl block mb-2">Based Places to be</span>
+                <span class="text-blue-800 text-sm">Places that are deemed to be the most based and worth visiting.</span>
+            </a>
+        </div>
+
+        <div class="bg-blue-200 p-6 text-center hover:bg-blue-300 transition-colors shadow-sm">
+            <a href="bucketlist.html" class="block">
+                <span class="text-blue-900 font-bold text-xl block mb-2">Based Bucket List</span>
+                <span class="text-blue-800 text-sm">Things to do and find out that will make life more enjoyable and fulfilling.</span>
+            </a>
+        </div>
     </div>
-    <div class="container my-5">
-    <div class="card text-center">
-
-        <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;">
-                <a href="music.html" class="text-info">Based Music Taste</a>
-            </h5>
-            <p class="card-text" style="font-family: 'Courier New', Courier, monospace;">
-                Music that will change your life and transcend your view of the world.
-            </p>
-        </div>
-
-        <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;">
-                <a href="places.html" class="text-info">Based Places to be</a>
-            </h5>
-            <p class="card-text" style="font-family: 'Courier New', Courier, monospace;">
-                Places that are deemed to be the most based and worth visiting.
-            </p>
-        </div>
-
-        <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Courier New', Courier, monospace;">
-                <a href="bucketlist.html" class="text-info">Based Bucket List</a>
-            </h5>
-            <p class="card-text" style="font-family: 'Courier New', Courier, monospace;">
-                Things to do and find out that will make life more enjoyable and fulfilling.
-            </p>
-        </div>
-
-    </div>
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>

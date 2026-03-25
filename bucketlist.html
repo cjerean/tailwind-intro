@@ -1,119 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <title>The Based Department</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+    <title>The Based Department</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-info bg-info">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="assets/img/1_63lGHmSncfaGQDhFRaK6JQ.png" alt="logo" width="50" height="50" class="mr-2">
-            <span class="text-white" style="font-family: 'Courier New', Courier, monospace; font-size: 24px;">
-                Based Department
-            </span>
-        </a>
-        <div class="ml-auto d-flex align-items-center">
-            <a href="music.html" class="mx-3" data-toggle="tooltip" title="Based Music Taste">
-                <img src="assets/img/music-solid-full.svg" alt="music" width="25" height="25">
+
+<body class="bg-blue-50 font-sans">
+    <div class="bg-blue-900 p-4">
+        <div class="text-2xl text-white text-center flex items-center justify-center space-x-4">
+            <a href="index.html"
+                class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/1_63lGHmSncfaGQDhFRaK6JQ.png" alt="home" class="w-8 h-8 rounded-full object-cover">
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">
+                    Home</div>
             </a>
-            <a href="places.html" class="mx-3" data-toggle="tooltip" title="Based Places to be">
-                <img src="assets/img/map-regular-full.svg" alt="map" width="25" height="25">
+            <a href="music.html"
+                class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/music-solid-full.svg" alt="music" class="w-8 h-8 filter invert">
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">
+                    Music</div>
             </a>
-            <a href="bucketlist.html" class="mx-3" data-toggle="tooltip" title="Based Bucket List">
-                <img src="assets/img/list-check-solid.svg" alt="list" width="25" height="25">
+            <a href="places.html"
+                class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/map-regular-full.svg" alt="map" class="w-8 h-8 filter invert">
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">
+                    Places</div>
+            </a>
+            <a href="bucketlist.html"
+                class="group relative bg-blend-color hover:bg-blue-200 text-white font-bold py-2 px-4 rounded">
+                <img src="assets/img/list-check-solid.svg" alt="list" class="w-8 h-8 filter invert">
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 top-full mt-2 scale-0 group-hover:scale-100 transition-transform bg-gray-800 text-white text-xs rounded px-2 py-1 z-50">
+                    Bucket List</div>
             </a>
         </div>
-
     </div>
-</nav>
-    
-    <div class="container text-center my-5">
-    <h1 class="mb-4" style="font-family: 'Courier New', Courier, monospace;">
-        Based Bucket List!
-    </h1>
-    <p style="font-family: 'Courier New', Courier, monospace; font-size: 18px;">
-        Things to do deemed to be the most based by the Based Department.
-    </p>
-    </div>
-    <div class="container my-5">
-  <div id="bucketAccordion">
 
-    
-    <div class="card">
-      <div class="card-header bg-info">
-        <h5 class="mb-0">
-          <button class="btn btn-link text-white" data-toggle="collapse" data-target="#longTerm">
-            Based Hobbies
-          </button>
-        </h5>
-      </div>
-
-      <div id="longTerm" class="collapse show" data-parent="#bucketAccordion">
-        <div class="card-body">
-          <ul>
-            <li>Workout</li>
-            <li>Read</li>
-            <li>Explore</li>
-            <li>Learn</li>
-          </ul>
+    <div class="grid grid-cols-1 gap-4 p-8 w-full max-w-3xl mx-auto">
+        <div class="bg-blue-200 p-6 text-center shadow-sm">
+            <h1 class="text-blue-900 font-bold text-3xl mb-2">Based Bucket List!</h1>
+            <p class="text-blue-800">Things to do deemed to be the most based by the Based Department.</p>
         </div>
-      </div>
-    </div>
 
-    <!-- Short-Term Goals -->
-    <div class="card">
-      <div class="card-header bg-info">
-        <h5 class="mb-0">
-          <button class="btn btn-link text-white collapsed" data-toggle="collapse" data-target="#shortTerm">
-            Based Goals
-          </button>
-        </h5>
-      </div>
+        <div class="space-y-4">
+            <details class="group bg-blue-200 rounded-lg shadow-sm border border-blue-300 overflow-hidden" open>
+                <summary
+                    class="flex justify-between items-center bg-blue-900 text-white px-6 py-4 cursor-pointer hover:bg-blue-800 focus:outline-none transition-colors">
+                    <h5 class="text-lg font-bold">Based Hobbies</h5>
+                    <span class="transition transform group-open:rotate-180">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </summary>
+                <div class="px-6 py-4 text-blue-900 border-t border-blue-300">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Workout</li>
+                        <li>Cycling</li>
+                        <li>Playing D&D</li>
+                        <li>Reading Literature</li>
+                        <li>Explore Places</li>
+                        <li>Learning new Things</li>
+                    </ul>
+                </div>
+            </details>
 
-      <div id="shortTerm" class="collapse" data-parent="#bucketAccordion">
-        <div class="card-body">
-          <ul>
-            <li>Create a new project</li>
-            <li>Learn new skills</li>
-            <li>Exercise consistently</li>
-            <li>Develop a healthy lifestyle</li>
-          </ul>
+            <details class="group bg-blue-200 rounded-lg shadow-sm border border-blue-300 overflow-hidden">
+                <summary
+                    class="flex justify-between items-center bg-blue-900 text-white px-6 py-4 cursor-pointer hover:bg-blue-800 focus:outline-none transition-colors">
+                    <h5 class="text-lg font-bold">Based Goals</h5>
+                    <span class="transition transform group-open:rotate-180">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </summary>
+                <div class="px-6 py-4 text-blue-900 border-t border-blue-300">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Create a new project</li>
+                        <li>Learn new skills</li>
+                        <li>Exercise consistently</li>
+                        <li>Develop a healthy lifestyle</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="group bg-blue-200 rounded-lg shadow-sm border border-blue-300 overflow-hidden">
+                <summary
+                    class="flex justify-between items-center bg-blue-900 text-white px-6 py-4 cursor-pointer hover:bg-blue-800 focus:outline-none transition-colors">
+                    <h5 class="text-lg font-bold">Bucket List</h5>
+                    <span class="transition transform group-open:rotate-180">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </summary>
+                <div class="px-6 py-4 text-blue-900 border-t border-blue-300">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Visit at least 10 different countries</li>
+                        <li>Go to the highest point in the world</li>
+                        <li>Establish a meaningful career</li>
+                    </ul>
+                </div>
+            </details>
         </div>
-      </div>
     </div>
-
-    <!-- Bucket List -->
-    <div class="card">
-      <div class="card-header bg-info">
-        <h5 class="mb-0">
-          <button class="btn btn-link text-white collapsed" data-toggle="collapse" data-target="#bucketList">
-            Bucket List
-          </button>
-        </h5>
-      </div>
-
-      <div id="bucketList" class="collapse" data-parent="#bucketAccordion">
-        <div class="card-body">
-          <ul>
-            <li>Visit at least 10 different countries</li>
-            <li>Go to the highest point in the world</li>
-            <li>Establish a meaningful career</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
+
 </html>
